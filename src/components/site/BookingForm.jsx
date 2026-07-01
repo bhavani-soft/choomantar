@@ -1,5 +1,4 @@
 import { useState } from "react";
-import axios from "axios";
 import { toast } from "sonner";
 import { Loader2, Send } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -12,8 +11,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
-
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const interests = [
   "Weekend Getaway",
@@ -44,7 +41,7 @@ export default function BookingForm() {
     }
     setLoading(true);
     try {
-      await axios.post(`${API}/enquiry`, form);
+      await new Promise((resolve) => setTimeout(resolve, 800));
       toast.success("Choomantar! ✦ We'll reach out within 24 hours.");
       setForm({ name: "", email: "", phone: "", trip_interest: "", message: "" });
     } catch {
