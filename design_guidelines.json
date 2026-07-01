@@ -1,0 +1,198 @@
+{
+  "project_name": "Choomantar",
+  "domain": "Travel/Adventure",
+  "theme_and_archetype": {
+    "theme": "light",
+    "archetype": "Archetype 1: Organic & Earthy",
+    "reasoning": "A travel brand focusing on adventure and weekend escapes needs to feel inviting, organic, and grounded. The 'vanish' theme plays well with warm sunsets, deep indigos (night skies/mystery), and earthy Indian textures."
+  },
+  "color_palette": {
+    "background": {
+      "primary": "#FAF8F5",
+      "secondary": "#F0EBE1",
+      "accent": "#1A202C"
+    },
+    "text": {
+      "primary": "#2D3748",
+      "secondary": "#4A5568",
+      "inverse": "#FAF8F5"
+    },
+    "brand": {
+      "primary": "#D97757",
+      "secondary": "#E29578",
+      "accent": "#2C3E50",
+      "highlight": "#E5A93B"
+    },
+    "surface": {
+      "card": "#FFFFFF",
+      "glass": "bg-white/70 backdrop-blur-xl border-white/40"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "primary_heading": "Cormorant Garamond, serif",
+      "secondary_heading": "Playfair Display, serif",
+      "body": "Outfit, sans-serif",
+      "wordmark": "Rozha One, serif"
+    },
+    "imports": "@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&family=Rozha+One&display=swap');",
+    "scales": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl font-light tracking-tighter leading-none",
+      "h2": "text-4xl sm:text-5xl font-medium tracking-tight",
+      "h3": "text-2xl sm:text-3xl font-medium",
+      "body": "text-base sm:text-lg leading-relaxed text-gray-700",
+      "label": "text-xs uppercase tracking-[0.2em] font-semibold text-brand-primary"
+    },
+    "rules": [
+      "Headings should use Cormorant Garamond for an elegant, premium, culturally-rooted 'sexy' vibe.",
+      "Body text should use Outfit for pristine modern legibility.",
+      "Avoid standard bold fonts for main headings; rely on font-light or font-medium with tight tracking.",
+      "Never center paragraphs. Left-align body copy."
+    ]
+  },
+  "spacing_and_layout": {
+    "general": "Generous spacing. Use p-6 to p-12 for sections. Containers with borders need ample internal padding.",
+    "mobile_first": "Design for 375px first. Use grid-cols-1 for mobile, scaling up to bento grids on desktop.",
+    "bento_grid": "For galleries and cards, mix tall and square shapes to create asymmetry and tension."
+  },
+  "surface_strategies": {
+    "cards": "Subtle borders (border-border/50), flat solid backgrounds. On hover, slight lift (-translate-y-1) and soft shadow.",
+    "header": "Crystal glassmorphism: bg-white/70 backdrop-blur-xl border-b border-white/40. Fixed z-50.",
+    "images": "Use overlay gradients (e.g., bg-gradient-to-t from-black/60 to-transparent) on hero/trip images to ensure text contrast."
+  },
+  "components": {
+    "ui_library": "shadcn/ui",
+    "custom_elements": "Use pure HTML/Tailwind for complex overlapping grids (Hero, Gallery).",
+    "specific_components": {
+      "carousel": "embla-carousel-react for mobile swipeable trip cards",
+      "accordion": "shadcn Accordion for FAQs",
+      "form": "shadcn Form, Input, Select, Textarea for Enquiry Booking"
+    }
+  },
+  "sections_blueprint": [
+    {
+      "id": "header",
+      "layout": "Fixed top, glassmorphism. Logo wordmark (Rozha One) left, hamburger menu right (mobile). Links center, CTA right (desktop).",
+      "data_testid": "header-nav"
+    },
+    {
+      "id": "hero",
+      "layout": "Full viewport height minus header. Large background image (Mist/Backpacker). Content aligned bottom-left or center. High contrast overlay.",
+      "content": "Wordmark 'Choomantar', Tagline 'Vanish into the extraordinary.', Primary CTA 'Find your escape'.",
+      "data_testid": "hero-section"
+    },
+    {
+      "id": "upcoming-trips",
+      "layout": "Horizontal scrolling carousel on mobile, 3-column grid on desktop. Card design with image, location label, title, dates, price.",
+      "data_testid": "upcoming-trips-section"
+    },
+    {
+      "id": "categories",
+      "layout": "Bento grid (Tetris mode). 1 large hero category (Weekend Getaways), smaller surrounding categories (Himalayas, Backpacking, etc).",
+      "data_testid": "categories-section"
+    },
+    {
+      "id": "why-us",
+      "layout": "Alternating staggered layout. Large earthy icons, Indian motif background texture (subtle opacity).",
+      "data_testid": "why-us-section"
+    },
+    {
+      "id": "gallery",
+      "layout": "Asymmetric masonry grid. Images of different aspect ratios. Focus on close-ups and wide landscape contrast.",
+      "data_testid": "gallery-section"
+    },
+    {
+      "id": "testimonials",
+      "layout": "Editorial ribbon marquee (slow scroll) or swipeable cards. Uses serif quotes and avatar images.",
+      "data_testid": "testimonials-section"
+    },
+    {
+      "id": "booking-form",
+      "layout": "Split layout: Left side image/copy, Right side Shadcn form. Clean, floating label style if possible, or distinct inputs.",
+      "data_testid": "booking-section"
+    },
+    {
+      "id": "footer",
+      "layout": "Massive typography for 'Choomantar'. Dark background (deep indigo) for contrast shift. Minimal links. Large social icons.",
+      "data_testid": "footer-section"
+    }
+  ],
+  "image_assets": {
+    "hero": [
+      {
+        "url": "https://images.unsplash.com/photo-1604394823436-623c4eaf029b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBiYWNrcGFja2VyfGVufDB8fHx8MTc4MjM4MDA4MHww&ixlib=rb-4.1.0&q=85",
+        "description": "Backpacker walking into the mist - perfect for 'Vanish' theme"
+      }
+    ],
+    "trip_cards": [
+      {
+        "url": "https://images.pexels.com/photos/13001734/pexels-photo-13001734.jpeg",
+        "description": "Himalayas Trek Sunset"
+      },
+      {
+        "url": "https://images.pexels.com/photos/28520254/pexels-photo-28520254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Goa Beach Sunset"
+      },
+      {
+        "url": "https://images.pexels.com/photos/19285083/pexels-photo-19285083.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Rajasthan Desert Camel"
+      },
+      {
+        "url": "https://images.pexels.com/photos/30778230/pexels-photo-30778230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Kerala Backwaters"
+      },
+      {
+        "url": "https://images.pexels.com/photos/19469039/pexels-photo-19469039.jpeg",
+        "description": "Meghalaya Waterfalls"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwxfHxib25maXJlJTIwZnJpZW5kcyUyMG5pZ2h0JTIwY2FtcGluZ3xlbnwwfHx8fDE3ODI1Nzk3ODZ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Friends camping bonfire"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1549926506-afba2eb9fb6f",
+        "description": "Himalayan peak"
+      },
+      {
+        "url": "https://images.pexels.com/photos/28536002/pexels-photo-28536002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Thar Desert dunes"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1534777367038-9404f45b869a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBiYWNrcGFja2VyfGVufDB8fHx8MTc4MjM4MDA4MHww&ixlib=rb-4.1.0&q=85",
+        "description": "Taj Mahal traveler"
+      },
+      {
+        "url": "https://images.pexels.com/photos/35735209/pexels-photo-35735209.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Houseboat Kerala"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1651663020072-b51bfa7b0813?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBiYWNrcGFja2VyfGVufDB8fHx8MTc4MjM4MDA4MHww&ixlib=rb-4.1.0&q=85",
+        "description": "Backpacker in mountains"
+      }
+    ],
+    "testimonials": [
+      {
+        "url": "https://images.pexels.com/photos/12327289/pexels-photo-12327289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Indian face portrait 1"
+      },
+      {
+        "url": "https://images.pexels.com/photos/29679657/pexels-photo-29679657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Indian face portrait 2"
+      }
+    ]
+  },
+  "icons_and_assets": {
+    "library": "lucide-react",
+    "usage": "Use icons sparingly. Avoid replacing text with icons. Keep stroke width fine (1.5 or 1) for a premium feel."
+  },
+  "testing_attributes": {
+    "requirement": "All interactive elements MUST include data-testid. Examples: data-testid='hero-cta-button', data-testid='booking-submit'."
+  },
+  "motion_and_interactions": {
+    "scroll": "Use Lenis for smooth scrolling.",
+    "reveal": "Use Framer Motion for scroll reveal. Staggered fade-up for gallery and cards.",
+    "hover": "Hover states must have a transition. Image scaling (scale-105) inside overflow-hidden containers for cards."
+  }
+}
