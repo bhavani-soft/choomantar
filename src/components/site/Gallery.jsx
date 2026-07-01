@@ -5,11 +5,11 @@ const images = [
     span: "row-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1549926506-afba2eb9fb6f",
+    src: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=compress&cs=tinysrgb&w=800",
     alt: "Himalayan peak at dawn",
   },
   {
-    src: "https://images.pexels.com/photos/28536002/pexels-photo-28536002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    src: "https://images.unsplash.com/photo-1509316975850-ff9c5edd0cd9?auto=compress&cs=tinysrgb&w=800",
     alt: "Thar desert dunes",
   },
   {
@@ -18,7 +18,7 @@ const images = [
     span: "col-span-2",
   },
   {
-    src: "https://images.pexels.com/photos/35735209/pexels-photo-35735209.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    src: "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=compress&cs=tinysrgb&w=800",
     alt: "Kerala houseboat",
   },
   {

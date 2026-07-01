@@ -6,14 +6,14 @@ const categories = [
     title: "Weekend Getaways",
     tagline: "Two nights. Zero regrets.",
     image:
-      "https://images.pexels.com/photos/28520254/pexels-photo-28520254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=compress&cs=tinysrgb&w=800",
     span: "sm:col-span-2 sm:row-span-2",
   },
   {
     id: "himalayas",
     title: "Himalayan Treks",
     tagline: "Above the clouds.",
-    image: "https://images.pexels.com/photos/13001734/pexels-photo-13001734.jpeg",
+    image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: "backpacking",
@@ -26,7 +26,7 @@ const categories = [
     id: "offbeat",
     title: "Offbeat India",
     tagline: "Places Google didn't pin.",
-    image: "https://images.pexels.com/photos/19469039/pexels-photo-19469039.jpeg",
+    image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=compress&cs=tinysrgb&w=800",
   },
   {
     id: "meetups",

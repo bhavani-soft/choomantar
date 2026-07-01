@@ -7,7 +7,7 @@ const items = [
     name: "Riya Menon",
     role: "Designer, Hyderabad",
     avatar:
-      "https://images.pexels.com/photos/12327289/pexels-photo-12327289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
   },
   {
     quote:
@@ -15,7 +15,7 @@ const items = [
     name: "Aditya Rao",
     role: "Product Manager, Mumbai",
     avatar:
-      "https://images.pexels.com/photos/29679657/pexels-photo-29679657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
   },
   {
     quote:
@@ -23,7 +23,7 @@ const items = [
     name: "Kavya Iyer",
     role: "Founder, Chennai",
     avatar:
-      "https://images.pexels.com/photos/12327289/pexels-photo-12327289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
   },
 ];
 
