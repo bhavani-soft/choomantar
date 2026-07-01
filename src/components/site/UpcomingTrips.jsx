@@ -4,7 +4,7 @@ import { ArrowUpRight, Clock, MapPin } from "lucide-react";
 const defaultTrips = [
   {
     "id": "hampi",
-    "image": "https://images.unsplash.com/photo-1600100397590-240a7b59d5c8?auto=compress&cs=tinysrgb&w=800",
+    "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=compress&cs=tinysrgb&w=800",
     "title": "Ruins of Hampi Exploration",
     "tag": "Bestseller",
     "location": "Hampi, Karnataka",
@@ -44,7 +44,7 @@ const defaultTrips = [
   },
   {
     "id": "hogenakkal",
-    "image": "https://images.unsplash.com/photo-1626014903708-5445ea574373?auto=compress&cs=tinysrgb&w=800",
+    "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=compress&cs=tinysrgb&w=800",
     "title": "Hogenakkal Falls Coracle Ride",
     "tag": "Weekend Getaway",
     "location": "Dharmapuri, Tamil Nadu",
@@ -94,7 +94,7 @@ const defaultTrips = [
   },
   {
     "id": "alleppey",
-    "image": "https://images.unsplash.com/photo-1593693411515-c202e974eb05?auto=compress&cs=tinysrgb&w=800",
+    "image": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=compress&cs=tinysrgb&w=800",
     "title": "Alleppey Houseboat Backwater Cruise",
     "tag": "Romance",
     "location": "Alleppey, Kerala",
