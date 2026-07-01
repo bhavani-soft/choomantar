@@ -40,10 +40,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="py-14 flex items-center justify-center">
+        <div className="py-14 flex items-center justify-center w-full overflow-hidden">
           <div
             data-testid="footer-wordmark"
-            className="font-wordmark text-white text-[22vw] sm:text-[16vw] leading-none tracking-tighter select-none"
+            className="font-wordmark text-white text-[15vw] sm:text-[15vw] md:text-[14vw] leading-none tracking-tighter select-none text-center"
           >
             choomantar<span className="text-[var(--marigold)]">.</span>
           </div>
