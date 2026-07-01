@@ -4,7 +4,7 @@ import { ArrowUpRight, Clock, MapPin } from "lucide-react";
 const defaultTrips = [
   {
     "id": "hampi",
-    "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=compress&cs=tinysrgb&w=800",
+    "image": "https://images.unsplash.com/photo-1616606484004-5ef3cc46e39d?auto=compress&cs=tinysrgb&w=800",
     "title": "Ruins of Hampi Exploration",
     "tag": "Bestseller",
     "location": "Hampi, Karnataka",
@@ -44,7 +44,7 @@ const defaultTrips = [
   },
   {
     "id": "hogenakkal",
-    "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=compress&cs=tinysrgb&w=800",
+    "image": "https://images.unsplash.com/photo-1646310022151-47e11285ca8b?auto=compress&cs=tinysrgb&w=800",
     "title": "Hogenakkal Falls Coracle Ride",
     "tag": "Weekend Getaway",
     "location": "Dharmapuri, Tamil Nadu",
