@@ -1,7 +1,5 @@
-import { useEffect } from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
 import { HOME } from "@/constants/testIds";
 import Header from "@/components/site/Header";
 import Hero from "@/components/site/Hero";
@@ -16,22 +14,7 @@ import BookingForm from "@/components/site/BookingForm";
 import Footer from "@/components/site/Footer";
 import StickyMobileCTA from "@/components/site/StickyMobileCTA";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
 const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
 
   return (
     <div className="relative min-h-screen bg-[var(--bg-primary)] text-[var(--ink)] overflow-x-hidden selection:bg-[var(--terracotta)] selection:text-white">
